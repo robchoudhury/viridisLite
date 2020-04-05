@@ -155,6 +155,20 @@ thrawn.pal <- thrawn.pal(seq(0, 1, len = n))/n
 colnames(thrawn.pal) <- c("R", "G", "B")
 write.csv(thrawn.pal, file = "data-raw/thrawn.csv",row.names = F)
 
+#drive
+drive = c("#f00179", "#10d5eb")
+drive.pal <- colorRamp(drive)
+drive.pal <- drive.pal(seq(0, 1, len = n))/n
+colnames(drive.pal) <- c("R", "G", "B")
+write.csv(drive.pal, file = "data-raw/drive.csv",row.names = F)
+
+#tmnt
+tmnt = c("#1ca1e3", "#b197c7","#e64233","#fc9c58")
+tmnt.pal <- colorRamp(tmnt)
+tmnt.pal <- tmnt.pal(seq(0, 1, len = n))/n
+colnames(tmnt.pal) <- c("R", "G", "B")
+write.csv(tmnt.pal, file = "data-raw/tmnt.csv",row.names = F)
+
 ####
 #okay I wanted to make some figures that would match with school colors
 #pulled colors from https://www.ucop.edu/initiatives/_files/carbon-neutrality-initiative/uc_CNI_branding.pdf
