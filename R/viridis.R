@@ -124,6 +124,41 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
                    E = "E", cividis = "E",
                    F = "F", rocket = "F",
                    G = "G", mako = "G",
+                   H = "H", aang = "H",
+                   I = "I", adrift = "I",
+                   J = "J", anxiety = "J",
+                   K = "K", castle = "K",
+                   L = "L", cherrybomb = "L",
+                   M = "M", compatible = "M",
+                   N = "N", conversation = "N",
+                   O = "O", cyberbullies = "O",
+                   P = "P", dreama = "P",
+                   Q = "Q", drive = "Q",
+                   R = "R", goldfish = "R",
+                   S = "S", guidance = "S",
+                   T = "T", herduliekmudkipz = "T",
+                   U = "U", highfashion = "U",
+                   V = "V", influenza = "V",
+                   W = "W", latenight = "W",
+                   X = "X", likeyou = "X",
+                   Y = "Y", magneto = "Y",
+                   Z = "Z", mardigras = "Z",
+                   AA = "AA", navy = "AA",
+                   BB = "BB", omniferous = "BB",
+                   CC = "CC", papergirls = "CC",
+                   DD = "DD", pinimg = "DD",
+                   EE = "EE", rambling = "EE",
+                   FF = "FF", saltwater = "FF",
+                   GG = "GG", skateboardsoda = "GG",
+                   HH = "HH", spillzone = "HH",
+                   II = "II", stories = "II",
+                   JJ = "JJ", sweetchill = "JJ",
+                   KK = "KK", thrawn = "KK",
+                   LL = "LL", tmnt = "LL",
+                   MM = "MM", toutsuite = "MM",
+                   NN = "NN", uc = "NN",
+                   OO = "OO", uf = "OO",
+                   PP = "PP", utrgv = "PP",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -169,6 +204,41 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
                    E = "E", cividis = "E",
                    E = "F", rocket = "F",
                    E = "G", mako = "G",
+                   H = "H", aang = "H",
+                   I = "I", adrift = "I",
+                   J = "J", anxiety = "J",
+                   K = "K", castle = "K",
+                   L = "L", cherrybomb = "L",
+                   M = "M", compatible = "M",
+                   N = "N", conversation = "N",
+                   O = "O", cyberbullies = "O",
+                   P = "P", dreama = "P",
+                   Q = "Q", drive = "Q",
+                   R = "R", goldfish = "R",
+                   S = "S", guidance = "S",
+                   T = "T", herduliekmudkipz = "T",
+                   U = "U", highfashion = "U",
+                   V = "V", influenza = "V",
+                   W = "W", latenight = "W",
+                   X = "X", likeyou = "X",
+                   Y = "Y", magneto = "Y",
+                   Z = "Z", mardigras = "Z",
+                   AA = "AA", navy = "AA",
+                   BB = "BB", omniferous = "BB",
+                   CC = "CC", papergirls = "CC",
+                   DD = "DD", pinimg = "DD",
+                   EE = "EE", rambling = "EE",
+                   FF = "FF", saltwater = "FF",
+                   GG = "GG", skateboardsoda = "GG",
+                   HH = "HH", spillzone = "HH",
+                   II = "II", stories = "II",
+                   JJ = "JJ", sweetchill = "JJ",
+                   KK = "KK", thrawn = "KK",
+                   LL = "LL", tmnt = "LL",
+                   MM = "MM", toutsuite = "MM",
+                   NN = "NN", uc = "NN",
+                   OO = "OO", uf = "OO",
+                   PP = "PP", utrgv = "PP",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -212,4 +282,10 @@ rocket <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
 #' @export
 mako <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
   viridis(n, alpha, begin, end, direction, option = "mako")
+}
+
+#' @rdname viridis
+#' @export
+aang <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "aang")
 }
