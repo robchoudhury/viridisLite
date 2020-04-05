@@ -141,6 +141,20 @@ aang.pal <- aang.pal(seq(0, 1, len = n))/n
 colnames(aang.pal) <- c("R", "G", "B")
 write.csv(aang.pal, file = "data-raw/aang.csv",row.names = F)
 
+#magneto
+magneto = c("#ef395e", "#6a2c94")
+magneto.pal <- colorRamp(magneto)
+magneto.pal <- magneto.pal(seq(0, 1, len = n))/n
+colnames(magneto.pal) <- c("R", "G", "B")
+write.csv(magneto.pal, file = "data-raw/magneto.csv",row.names = F)
+
+#thrawn
+thrawn = c("#cd4540", "#438aa8")
+thrawn.pal <- colorRamp(thrawn)
+thrawn.pal <- thrawn.pal(seq(0, 1, len = n))/n
+colnames(thrawn.pal) <- c("R", "G", "B")
+write.csv(thrawn.pal, file = "data-raw/thrawn.csv",row.names = F)
+
 ####
 #okay I wanted to make some figures that would match with school colors
 #pulled colors from https://www.ucop.edu/initiatives/_files/carbon-neutrality-initiative/uc_CNI_branding.pdf
