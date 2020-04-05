@@ -9,13 +9,12 @@
 \alias{cividis}
 \alias{rocket}
 \alias{mako}
+\alias{aang}
 \title{Matplotlib 'viridis', 'cividis', 'rocket' and 'mako' color maps}
 \usage{
-viridis(n, alpha = 1, begin = 0, end = 1, direction = 1,
-  option = "D")
+viridis(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D")
 
-viridisMap(n = 256, alpha = 1, begin = 0, end = 1, direction = 1,
-  option = "D")
+viridisMap(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D")
 
 magma(n, alpha = 1, begin = 0, end = 1, direction = 1)
 
@@ -28,6 +27,8 @@ cividis(n, alpha = 1, begin = 0, end = 1, direction = 1)
 rocket(n, alpha = 1, begin = 0, end = 1, direction = 1)
 
 mako(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+aang(n, alpha = 1, begin = 0, end = 1, direction = 1)
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}

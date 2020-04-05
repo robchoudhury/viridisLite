@@ -93,5 +93,5 @@ viridis.map <- rbind(optionA, optionB, optionC, optionD, optionE, optionF,
                      saltwater, skateboardsoda, spillzone, stories, sweetchill,
                      thrawn, tmnt, toutsuite, uc, uf, utrgv)
 
-devtools::use_data(viridis.map, overwrite = TRUE)
+usethis::use_data(viridis.map, overwrite = TRUE)
 

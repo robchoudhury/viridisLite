@@ -3,15 +3,17 @@
 \docType{data}
 \name{viridis.map}
 \alias{viridis.map}
-\title{Original 'viridis', 'cividis', 'rocket' and ''mako' color maps}
-\format{A data frame with 1792 rows and 4 variables:
+\title{Original 'viridis', 'cividis', 'rocket' and 'mako' color maps}
+\format{
+A data frame with 1792 rows and 4 variables:
 \itemize{
   \item R: Red value
   \item G: Green value
   \item B: Blue value
   \item opt: The colormap "option" (A: magma; B: inferno; C: plasma;
   D: viridis; E: cividis; F: rocket; G: mako)
-}}
+}
+}
 \usage{
 viridis.map
 }
