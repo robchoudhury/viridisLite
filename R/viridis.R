@@ -122,44 +122,19 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
                    C = "C", plasma = "C",
                    D = "D", viridis = "D",
                    E = "E", cividis = "E",
-                   F = "F", rocket = "F",
-                   G = "G", mako = "G",
-                   H = "H", aang = "H",
-                   I = "I", adrift = "I",
-                   J = "J", anxiety = "J",
-                   K = "K", castle = "K",
-                   L = "L", cherrybomb = "L",
-                   M = "M", compatible = "M",
-                   N = "N", conversation = "N",
-                   O = "O", cyberbullies = "O",
-                   P = "P", dreama = "P",
-                   Q = "Q", drive = "Q",
-                   R = "R", goldfish = "R",
-                   S = "S", guidance = "S",
-                   T = "T", herduliekmudkipz = "T",
-                   U = "U", highfashion = "U",
-                   V = "V", influenza = "V",
-                   W = "W", latenight = "W",
-                   X = "X", likeyou = "X",
-                   Y = "Y", magneto = "Y",
-                   Z = "Z", mardigras = "Z",
-                   AA = "AA", navy = "AA",
-                   BB = "BB", omniferous = "BB",
-                   CC = "CC", papergirls = "CC",
-                   DD = "DD", pinimg = "DD",
-                   EE = "EE", rambling = "EE",
-                   FF = "FF", saltwater = "FF",
-                   GG = "GG", skateboardsoda = "GG",
-                   HH = "HH", spillzone = "HH",
-                   II = "II", stories = "II",
-                   JJ = "JJ", sweetchill = "JJ",
-                   KK = "KK", thrawn = "KK",
-                   LL = "LL", tmnt = "LL",
-                   MM = "MM", toutsuite = "MM",
-                   NN = "NN", uc = "NN",
-                   OO = "OO", uf = "OO",
-                   PP = "PP", utrgv = "PP",
-                   {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
+                   E = "F", rocket = "F",
+                   E = "G", mako = "G",
+                   H = "H", anxiety = "H",
+                   I = "I", castle = "I",
+                   J = "J", deepriver = "J",
+                   K = "K", forests = "K",
+                   L = "L", guidance = "L",
+                   M = "M", influenza = "M",
+                   N = "N", mardigras = "N",
+                   O = "O", vaporwave = "O",
+                   P = "P", toutsuite = "P",
+                   Q = "Q", uc = "Q",
+                   R = "R", utrgv = "R")
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
   map_cols <- grDevices::rgb(map$R, map$G, map$B)
@@ -204,41 +179,17 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
                    E = "E", cividis = "E",
                    E = "F", rocket = "F",
                    E = "G", mako = "G",
-                   H = "H", aang = "H",
-                   I = "I", adrift = "I",
-                   J = "J", anxiety = "J",
-                   K = "K", castle = "K",
-                   L = "L", cherrybomb = "L",
-                   M = "M", compatible = "M",
-                   N = "N", conversation = "N",
-                   O = "O", cyberbullies = "O",
-                   P = "P", dreama = "P",
-                   Q = "Q", drive = "Q",
-                   R = "R", goldfish = "R",
-                   S = "S", guidance = "S",
-                   T = "T", herduliekmudkipz = "T",
-                   U = "U", highfashion = "U",
-                   V = "V", influenza = "V",
-                   W = "W", latenight = "W",
-                   X = "X", likeyou = "X",
-                   Y = "Y", magneto = "Y",
-                   Z = "Z", mardigras = "Z",
-                   AA = "AA", navy = "AA",
-                   BB = "BB", omniferous = "BB",
-                   CC = "CC", papergirls = "CC",
-                   DD = "DD", pinimg = "DD",
-                   EE = "EE", rambling = "EE",
-                   FF = "FF", saltwater = "FF",
-                   GG = "GG", skateboardsoda = "GG",
-                   HH = "HH", spillzone = "HH",
-                   II = "II", stories = "II",
-                   JJ = "JJ", sweetchill = "JJ",
-                   KK = "KK", thrawn = "KK",
-                   LL = "LL", tmnt = "LL",
-                   MM = "MM", toutsuite = "MM",
-                   NN = "NN", uc = "NN",
-                   OO = "OO", uf = "OO",
-                   PP = "PP", utrgv = "PP",
+                    H = "H", anxiety = "H",
+                    I = "I", castle = "I",
+                   J = "J", deepriver = "J",
+                   K = "K", forests = "K",
+                   L = "L", guidance = "L",
+                   M = "M", influenza = "M",
+                   N = "N", mardigras = "N",
+                   O = "O", vaporwave = "O",
+                   P = "P", toutsuite = "P",
+                   Q = "Q", uc = "Q",
+                   R = "R", utrgv = "R",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -286,6 +237,66 @@ mako <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
 
 #' @rdname viridis
 #' @export
-aang <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
-  viridis(n, alpha, begin, end, direction, option = "aang")
+anxiety <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "anxiety")
+}
+
+#' @rdname viridis
+#' @export
+castle <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "castle")
+}
+
+#' @rdname viridis
+#' @export
+deepriver <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "deepriver")
+}
+
+#' @rdname viridis
+#' @export
+forests <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "forests")
+}
+
+#' @rdname viridis
+#' @export
+guidance <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "guidance")
+}
+
+#' @rdname viridis
+#' @export
+influenza <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "influenza")
+}
+
+#' @rdname viridis
+#' @export
+mardigras <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "mardigras")
+}
+
+#' @rdname viridis
+#' @export
+vaporwave <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "vaporwave")
+}
+
+#' @rdname viridis
+#' @export
+toutsuite <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "toutsuite")
+}
+
+#' @rdname viridis
+#' @export
+uc <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "uc")
+}
+
+#' @rdname viridis
+#' @export
+utrgv <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "utrgv")
 }

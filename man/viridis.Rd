@@ -9,7 +9,17 @@
 \alias{cividis}
 \alias{rocket}
 \alias{mako}
-\alias{aang}
+\alias{anxiety}
+\alias{castle}
+\alias{deepriver}
+\alias{forests}
+\alias{guidance}
+\alias{influenza}
+\alias{mardigras}
+\alias{vaporwave}
+\alias{toutsuite}
+\alias{uc}
+\alias{utrgv}
 \title{Matplotlib 'viridis', 'cividis', 'rocket' and 'mako' color maps}
 \usage{
 viridis(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D")
@@ -28,7 +38,27 @@ rocket(n, alpha = 1, begin = 0, end = 1, direction = 1)
 
 mako(n, alpha = 1, begin = 0, end = 1, direction = 1)
 
-aang(n, alpha = 1, begin = 0, end = 1, direction = 1)
+anxiety(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+castle(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+deepriver(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+forests(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+guidance(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+influenza(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+mardigras(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+vaporwave(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+toutsuite(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+uc(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+utrgv(n, alpha = 1, begin = 0, end = 1, direction = 1)
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}

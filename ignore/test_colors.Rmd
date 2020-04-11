@@ -1,0 +1,179 @@
+---
+title: "Untitled"
+author: "Robin"
+date: "April 5, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(pals)
+library(viridis)
+library(viridisLite)
+x=rnorm(10000); y = rnorm(10000)
+```
+
+## 20+ R color palettes, need to decide which is going to make the cut
+
+```{r cars}
+pals::pal.safe(viridis(100, option = "A"), main = "Option A")
+
+pals::pal.safe(viridis(100, option = "B"), main = "Option B")
+
+pals::pal.safe(viridis(100, option = "C"), main = "Option C")
+
+pals::pal.safe(viridis(100, option = "D"), main = "Option D")
+
+pals::pal.safe(viridis(100, option = "E"), main = "Option E")
+
+pals::pal.safe(viridis(100, option = "F"), main = "Option F")
+
+pals::pal.safe(viridis(100, option = "G"), main = "Option G")
+#pals::pal.safe(viridis(100, option = "H"), main = "Option H")
+#pals::pal.safe(viridis(100, option = "I"), main = "Option I")
+
+pals::pal.safe(viridis(100, option = "J"), main = "Option J")
+pals::pal.safe(viridis(100, option = "K"), main = "Option K") #deeper on the dark end
+pals::pal.safe(viridis(100, option = "L"), main = "Option L")
+pals::pal.safe(viridis(100, option = "M"), main = "Option M")
+#pals::pal.safe(viridis(100, option = "N"), main = "Option N")
+
+pals::pal.safe(viridis(100, option = "O"), main = "Option O")
+pals::pal.safe(viridis(100, option = "P"), main = "Option P") #not deep enough
+pals::pal.safe(viridis(100, option = "Q"), main = "Option Q")
+#pals::pal.safe(viridis(100, option = "R"), main = "Option R")
+
+pals::pal.safe(viridis(100, option = "S"), main = "Option S")
+
+#pals::pal.safe(viridis(100, option = "T"), main = "Option T")
+pals::pal.safe(viridis(100, option = "U"), main = "Option U") #too pastel
+pals::pal.safe(viridis(100, option = "V"), main = "Option V")
+#pals::pal.safe(viridis(100, option = "W"), main = "Option W")
+#pals::pal.safe(viridis(100, option = "X"), main = "Option X")
+#pals::pal.safe(viridis(100, option = "Y"), main = "Option Y")
+
+pals::pal.safe(viridis(100, option = "Z"), main = "Option Z")
+#pals::pal.safe(viridis(100, option = "AA"), main = "Option AA")
+#pals::pal.safe(viridis(100, option = "BB"), main = "Option BB")
+
+#pals::pal.safe(viridis(100, option = "CC"), main = "Option CC")
+#pals::pal.safe(viridis(100, option = "DD"), main = "Option DD")
+
+#pals::pal.safe(viridis(100, option = "EE"), main = "Option EE")
+#pals::pal.safe(viridis(100, option = "FF"), main = "Option FF")
+pals::pal.safe(viridis(100, option = "GG"), main = "Option GG")
+#pals::pal.safe(viridis(100, option = "HH"), main = "Option HH")
+#pals::pal.safe(viridis(100, option = "II"), main = "Option II")
+#pals::pal.safe(viridis(100, option = "JJ"), main = "Option JJ")
+#pals::pal.safe(viridis(100, option = "KK"), main = "Option KK")
+#pals::pal.safe(viridis(100, option = "LL"), main = "Option LL")
+pals::pal.safe(viridis(100, option = "MM"), main = "Option MM")
+pals::pal.safe(viridis(100, option = "NN"), main = "Option NN")
+#pals::pal.safe(viridis(100, option = "OO"), main = "Option OO")
+pals::pal.safe(viridis(100, option = "PP"), main = "Option PP")
+
+####
+#INVERSION N, L, S?,Z,GG,
+#survivors
+# #J#, #K#, #O#, #P#, S, #V#, Z, #GG#, #MM#, NN, PP
+pal.bands(viridisLite::viridis(100, option = "J"),
+          viridisLite::viridis(100, option = "K"),
+          viridisLite::viridis(100, option = "O"),
+          viridisLite::viridis(100, option = "P"),
+          viridisLite::viridis(100, option = "S"),
+          viridisLite::viridis(100, option = "V"),
+          viridisLite::viridis(100, option = "Z"),
+          viridisLite::viridis(100, option = "GG"),
+          viridisLite::viridis(100, option = "MM"),
+          viridisLite::viridis(100, option = "NN"),
+          viridisLite::viridis(100, option = "PP")
+          )
+
+pal.channels(viridisLite::cividis(100), main = "Cividis")
+
+pal.channels(viridisLite::viridis(100, option = "J"))
+          pal.channels(viridisLite::viridis(100, option = "K"))
+          pal.channels(viridisLite::viridis(100, option = "L"))
+
+          pal.channels(viridisLite::viridis(100, option = "O"))
+          pal.channels(viridisLite::viridis(100, option = "P"))
+          pal.channels(viridisLite::viridis(100, option = "S"))
+          pal.channels(viridisLite::viridis(100, option = "V"))
+          pal.channels(viridisLite::viridis(100, option = "Z"))
+          pal.channels(viridisLite::viridis(100, option = "GG"))
+          pal.channels(viridisLite::viridis(100, option = "MM"))
+          pal.channels(viridisLite::viridis(100, option = "NN"))
+          pal.channels(viridisLite::viridis(100, option = "PP"))
+          
+
+
+
+```
+
+
+```{r}
+# #J#, #K#, #O#, #P#, S, #V#, Z, #GG#, #MM#, NN, PP
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "J") +
+  ggtitle("Theme J, anxiety")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "K") +
+  ggtitle("Theme K, castle")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "L", direction = -1) +
+  ggtitle("Theme L, prismatic")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "O") +
+  ggtitle("Theme O, deepriver") 
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "P") +
+  ggtitle("Theme P, dreama")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "S") +
+  ggtitle("Theme S, guidance")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "V") +
+  ggtitle("Theme V, influenza")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "Z") +
+  ggtitle("Theme Z, mardigras")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "GG") +
+  ggtitle("Theme GG, vaporwave")
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "MM") +
+  ggtitle("Theme MM, toutsuite")
+ 
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "NN") +
+  ggtitle("Theme NN, UC") 
+
+
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_hex() + theme_bw()+ coord_fixed() +
+  scale_fill_viridis(option = "PP") +
+  ggtitle("Theme PP, UTRGV")
+```
+

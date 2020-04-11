@@ -33,7 +33,14 @@ AND... they are now available for R!
 
 #### Look how pretty they are! 
 
-![Sample image](https://raw.githubusercontent.com/sjmgarnier/viridis/master/img/sample2.png)
+![Sample image](img/sample2.png)
+
+#### Robin Choudhury Additional Palettes 
+
+*Note from Robin Choudhury 2020-04-11* I wanted to create a few color palettes, I liked the formatting that they did for viridis/viridisLite so I piggybacked off their code and added a few more. They're not all as colorblind friendly as viridis-scales, but I wanted a bit more variation beyond what viridis/pals had around
+
+![Sample image](img/sample3.png)
+
 
 ---
 
